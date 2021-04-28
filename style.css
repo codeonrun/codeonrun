@@ -1,10 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 :root{
-	--primary-background: #131313;
-	--secondary-background: #14213D;
+	--primary: #131313;
+	--secondary: #14213D;
 	--other:#FCA311;
-/* 	--text:#E5E5E5; */
-	--text:#f5f8fd;
+/* 	--primary:#E5E5E5; */
+	--background:#f5f8fd;
+	--background2:#f1f1f1;
 }
 * {
 	padding: 0;
@@ -34,9 +35,10 @@ img{
 .logo{
 	width:130px;
 	padding: 20px 0 ;
+	
 }
 p {
-	color: var(--primary-background);
+	color: var(--primary);
 	font-size: 1.9rem;
 	margin-top: 5px;
 	line-height: 2.5rem;
@@ -46,7 +48,7 @@ p {
 .section-title {
 	font-size: 4rem;
 	font-weight: 300;
-	color: var(--primary-background);
+	color: var(--primary);
 	margin-bottom: 10px;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
@@ -59,7 +61,7 @@ p {
 .cta {
 	display: inline-block;
 	padding: 10px 30px;
-	color: var(--text);
+	color: var(--primary);
 	background-color: transparent;
 	border: 2px solid var(--other);
 	border-top: none;
@@ -72,14 +74,14 @@ p {
 	border-radius: 30px 0;
 }
 .cta:hover {
-	color: var(--text);
+	color: var(--primary);
 	background-color: var(--other);
 }
 
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
-	color: var(--text);
+	color: var(--primary);
 	
 	
 }
@@ -114,7 +116,7 @@ p {
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color:var(--primary-background);
+	background-color:var(--primary);
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
@@ -135,7 +137,7 @@ p {
 	font-weight: 500;
 	letter-spacing: .2rem;
 	text-decoration: none;
-	color: var(--text);
+	color: var(--primary);
 	text-transform: uppercase;
 	padding: 20px;
 	display: block;
@@ -165,7 +167,7 @@ p {
 	height: 60px;
 	width: 60px;
 	display: inline-block;
-	border: 3px solid var(--text);
+	border: 3px solid var(--primary);
 	border-radius: 50%;
 	position: relative;
 	display: flex;
@@ -182,14 +184,14 @@ p {
 	height: 100%;
 	width: 100%;
 	border-radius: 50%;
-	border: 3px solid var(--text);
+	border: 3px solid var(--primary);
 	animation: hamburger_puls 1s ease infinite;
 }
 #header .hamburger .bar {
 	height: 2px;
 	width: 30px;
 	position: relative;
-	background-color: var(--text);
+	background-color: var(--primary);
 	z-index: -1;
 }
 #header .hamburger .bar::after,
@@ -199,7 +201,7 @@ p {
 	height: 100%;
 	width: 100%;
 	left: 0;
-	background-color: var(--text);
+	background-color: var(--primary);
 	transition: .3s ease;
 	transition-property: top, bottom;
 }
@@ -219,24 +221,31 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./img/hero-bg.jpg);
+	/* background-image: url(./img/hero-bg.jpg);
 	background-size: cover;
 	background-position: top center;
-	background-attachment: fixed;
+	background-attachment: fixed; */
+	background-color: var(--background2);
 	position: relative;
-	z-index: 1;
-	
+	z-index: 1;	
 }
-#hero::after {
+
+
+/* #hero::after {
 	content: '';
 	position: absolute;
 	left: 0;
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: black;
+	background-color: rgb(189, 189, 189);
 	opacity: .8;
 	z-index: -1;
+} */
+
+#hero .hero-illu{
+	display: none;
+	margin-left: 30%;
 }
 #hero .hero {
 	max-width: 1200px;
@@ -361,12 +370,12 @@ p {
 }
 #services .service-item h2 {
 	font-size: 2rem;
-	color: var(--text);
+	color: var(--primary);
 	margin-bottom: 0px;
 	text-transform: uppercase;
 }
 #services .service-item p {
-	color: var(--text);
+	color: var(--primary);
 	text-align: left;
 }
 
@@ -407,7 +416,7 @@ p {
 	justify-content: center;
 	flex-direction: column;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: var(--text);
+	color: var(--primary);
 }
 #projects .project-info h1 {
 	font-size: 4rem;
@@ -419,7 +428,7 @@ p {
 	margin-top: 10px;
 }
 #projects .project-info p {
-	color: var(--text);
+	color: var(--primary);
 }
 #projects .project-img {
 	flex-basis: 50%;
@@ -470,7 +479,7 @@ p {
 	margin-bottom: 20px;
 } */
 #about .col-right .cta {
-	color: var(--primary-background);
+	color: var(--primary);
 	/* margin-bottom: 50px; */
 	/* padding: 10px 20px; */
 	font-size: 2rem;
@@ -479,7 +488,7 @@ p {
 	height: 100%;
 	width: 100%;
 	position: relative;
-	border: 10px solid var(--text);
+	border: 10px solid var(--primary);
 }
 #about .col-left .about-img::after {
 	content: '';
@@ -547,7 +556,7 @@ p {
 	padding-bottom: 10px;
 }
 #footer h2 {
-	color: var(--text);
+	color: var(--primary);
 	font-weight: 500;
 	font-size: 1.8rem;
 	letter-spacing: .1rem;
@@ -571,7 +580,7 @@ p {
 	filter: grayscale(0);
 }
 #footer p {
-	color: var(--text);
+	color: var(--primary);
 	font-size: 1.3rem;
 }
 /* End Footer */
@@ -599,7 +608,7 @@ p {
 }
 @keyframes text_reveal {
 	100% {
-		color: var(--text);
+		color: var(--primary);
 	}
 }
 @keyframes text_reveal_name {
@@ -724,6 +733,15 @@ p {
 	#header .hamburger {
 		display: none;
 	}
+	#hero .hero-illu{
+		display: block;
+	}
+	/* #hero .hero-text{
+		margin-right: 5%;
+	} */
+	/* #gero .hero-text h1{
+	
+	} */
 	#header .nav-list ul {
 		position: initial;
 		display: block;
