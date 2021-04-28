@@ -4,9 +4,8 @@
 	--secondary-background: #0a192f;
 
 	--other:#8892b0; 
-	/* --other:#FCA311;  */
-/* 	--text:#E5E5E5; */
 	--text:#f5f8fd;
+	
 
 	--background:#f5f8fd;
 	--background2:#f1f1f1;
@@ -33,7 +32,7 @@
 }
 
 .cover-bkg .shape-fill {
-    fill: #FFFFFF;
+    fill: var(--text)
 }
 
 /* body{
@@ -48,7 +47,7 @@ a {
 	text-decoration: none;
 }
 .container {
-	min-height: 100vh;
+	min-height: 90vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -87,10 +86,8 @@ p {
 .cta {
 	display: inline-block;
 	padding: 10px 30px;
-	color: var(--other);
-	/* color: var(--secondary-background); */
-	/* background-color: var(--other); */
-	border: 2px solid var(--other);
+	color: var(--text);
+	border: 2px groove var(--text);
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
@@ -272,11 +269,15 @@ p {
 
 
 /* About Section */
+#about{
+	background-color: var(--text);
+}
 #about .about {
 	flex-direction: column-reverse;
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
+
 /* 	padding: 10px 20px; */
 }
 #about .col-left {
@@ -320,6 +321,9 @@ p {
 /* End About Section */
 
 /* contact Section */
+#contact{
+	background-color: var(--text);
+}
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
@@ -465,6 +469,10 @@ p {
 	}
 	/* End Services Section */
 
+	
+		#backtotop {
+			margin: 30px;
+		  }
 	
 
 	/* About */
@@ -693,4 +701,5 @@ p {
 	  width: 100%;
 	}
   }
+
 
