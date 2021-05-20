@@ -26,6 +26,9 @@ body{
 body{
   background-color: var(--primary-background);
 }
+
+
+
 ::selection, a:hover, a:hover *, *:target {
   background-color:var(--text);
   color: var(--primary-background);
