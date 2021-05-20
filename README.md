@@ -1,4 +1,5 @@
-### Hi there 👋
+## Hi there 👋
+# Welcome to Code On Run
 The main aims of this community is to connect with people all over the word who share the same interest. We connect with people who enjoy continuous learning, regard failure as a stepping stone to success, and are constantly working on improving themselves.
 
 ### The following Project were developed by members of this community
@@ -16,8 +17,5 @@ The main aims of this community is to connect with people all over the word who 
 - [Tract](trackt.vercel.app/)
 - [Daily Moments](https://github.com/dankazim/Daily-Moments)
 
-<!-- ## Stats
-![Grace's GitHub stats](https://github-readme-stats.vercel.app/api?username=dankazim&show_icons=true&theme=dracula) -->
 
-Let's connect on 
 
