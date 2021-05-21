@@ -227,26 +227,10 @@ p {
 	display: block;
 }
 
-#header .nav-list ul a::after {
-	content: attr(data-after);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) scale(0);
-	color:var(--primary-background); 
-	font-size: 13rem;
-	letter-spacing: 50px;
-	z-index: -1;
-	transition: .3s ease letter-spacing;
-	
-}
-#header .nav-list ul li:hover a::after {
-	transform: translate(-50%, -50%) scale(1);
-	letter-spacing: initial;
-}
+
 #header .nav-list ul li:hover a {
 	color: var(--other);
-	line-height: 0.2rem;
+	
 	text-decoration: none;
 }
 #header .hamburger {
@@ -392,7 +376,7 @@ p {
 #about .discordSum{
 	width: 60%;
 	display: grid;
-	grid-template-columns: repeat(auto-fit,minmax(30px, 1fr));
+	grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
 	grid-gap: 5px;
 	margin-left: 25%;
 	padding: 2% 0% 5% 0%;
@@ -412,9 +396,9 @@ p {
 }
 
 #about .discordSum>div{
-	
 	text-align: center;
 }
+
 #contact{
 	background-color: var(--text);
 }
