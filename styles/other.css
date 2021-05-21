@@ -21,18 +21,40 @@
 html {
 	font-family: 'Vollkorn', serif;
 	scroll-behavior: smooth;
+ 
 }
 html::-webkit-scrollbar {
 	display: none;
 }
-body{
+.main{
   display: grid;
   grid-gap: 1.62em; 
-  margin: 5%;
+ padding: 5%;
 }
-body{
+
+
+body {
+	background-image: url(/img/hero-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 1;	
+}
+body::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	background-color: var(--primary-background);
+	opacity: 0.94;
+	z-index: -1;
+} 
+
+/* body{
   background-color: var(--primary-background);
-}
+} */
 
 
 
@@ -80,3 +102,6 @@ body{
   color: var(--text);
 }
 
+footer{
+  margin-top: 5%;
+}
