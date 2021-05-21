@@ -493,6 +493,7 @@ p {
 	}
 }
 
+
 @media only screen and (max-width: 400px) {
 	#hero h1 {
 		font-size: 3rem;
@@ -508,6 +509,9 @@ p {
 		font-size: 1.5rem;
 		text-align: left;
 		padding: 0 6%;
+	}
+	.cta2{
+		font-size: 1.1rem;
 	}
 	
 }
