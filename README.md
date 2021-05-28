@@ -5,7 +5,7 @@ The main aims of this community is to connect with people all over the word who 
 #### Founders
 - [Dan M. Kazimoto](https://github.com/dankazim)
 - [Chanbroset Prach](https://github.com/chanrose)
-- Tarun Tudo
+- Tarun Tudu
 - Gan Jiachern
 
 ### The following Project were developed by members of this community
